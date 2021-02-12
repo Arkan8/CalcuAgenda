@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <script src="scriptCalculadora.js"></script>
+    <link rel="stylesheet" href="./estiloCalculadora.css">
+</head>
+<body>
+    <div id="calcu">
+        <div class="superior">
+            <span onclick="añadirValor('C')" id="c" class="borrar calcu">C</span>
+            <input type="text" id="pantalla" class="pantalla" maxlength="13" readonly>
+            <!--<div id="pantalla" class="pantalla calcu"></div>-->
+        </div>
+
+        <div class="teclas">
+            <span onclick="añadirValor('±')" id = "masmenos" class="especiales calcu">±</span>
+            <span onclick="añadirValor('√')" id = "raiz" class="especiales calcu">√</span>
+            <span onclick="añadirValor('%')" id = "porcen" class="especiales calcu">%</span>
+            <span onclick="añadirValor('1/x')" id = "unoequis" class="especiales2 calcu">1/x</span>
+            <span onclick="añadirValor(7)" id = "siete" class="calcu">7</span>
+            <span onclick="añadirValor(8)" id = "ocho" class="calcu">8</span>
+            <span onclick="añadirValor(9)" id = "nueve" class="calcu">9</span>
+            <span onclick="añadirValor('+')" id = "suma" class="operador calcu">+</span>
+            <span onclick="añadirValor(4)" id = "cuatro" class="calcu">4</span>
+            <span onclick="añadirValor(5)" id = "cinco" class="calcu">5</span>
+            <span onclick="añadirValor(6)" id = "seis" class="calcu">6</span>
+            <span onclick="añadirValor('-')" id = "menos" class="operador calcu">-</span>
+            <span onclick="añadirValor(1)" id = "uno" class="calcu">1</span>
+            <span onclick="añadirValor(2)" id = "dos" class="calcu">2</span>
+            <span onclick="añadirValor(3)" id = "tres" class="calcu">3</span>
+            <span onclick="añadirValor('÷')" id = "dividir" class="operador calcu">÷</span>
+            <span onclick="añadirValor(0)" id = "cero" class="calcu">0</span>
+            <span onclick="añadirValor('.')" id = "punto" class="calcu">.</span>
+            <span onclick="añadirValor('=')" id = "igual" class="igual calcu">=</span>
+            <span onclick="añadirValor('x')" id = "multi" class="operador calcu">x</span>   
+        </div>
+    </div>
+</body>
+</html>

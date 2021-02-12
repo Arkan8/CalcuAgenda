@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="estiloAgenda.css">
+  <script src="scriptAgenda.js"></script>
+  <title>Agenda de contactos</title>
+
+</head>
+<body onload="iniciar()">
+<!-- partial:index.partial.html -->
+<div class="card">
+    <div class="card-body">
+
+        <div class="menuSuperior">
+            <button class="botones" id="primerRegistro"><b><<</b></button>
+            <button class="botones" id="anteriorRegistro"><b><</b></button>
+            <label class="registros" id="numeroRegistros">0 de 0</label>
+            <button class="botones" id="siguienteRegistro"><b>></b></button>
+            <button class="botones" id="ultimoRegistro"><b>>></b></button>
+
+            <button class="buscar botones" id="buscar"><b>VER</b></button>
+            <strong class="buscar buscarID">
+                <input type="text" id="busc" placeholder="Nº de registro"/>
+            </strong>
+            <label class="buscar"><b>Registro: </b></label>
+        </div>
+
+
+        <div class="form-group">
+            <div class="text">
+                <label>Nombre:</label>
+                <div class="campo"><input type="text" id="nombre" placeholder="Introduzca su nombre" /></div>
+                <label id="errorNombre" class="error"></label>
+            </div>
+            <div class="text">
+                <label>Apellidos:</label>
+                <div class="campo"><input type="text" id="apellidos" placeholder="Introduzca sus apellidos"/></div>
+                <label id="errorApellidos" class="error"></label>
+            </div>
+            <div class="text">
+                <label>Teléfono:</label>
+                <div class="campo"><input type="text" id="telefono" placeholder="Introduzca su teléfono"/></div>
+                <label id="errorTelefono" class="error"></label>
+            </div>
+            <div class="text">
+                <label>Fecha de nacimiento:</label>
+                <div class="campo"><input type="text" id="fecha" placeholder="Introduzca su fecha de nacimiento (dd/mm/yyyy)"/></div>
+                <label id="errorFecha" class="error"></label>
+            </div>
+            <div id="botonesFormulario">
+                <button class="botones btn2" id="btnGuardar">Guardar</button>
+                <button class="botones btn2" id="btnLimpiar">Limpiar</button>
+                <button class="botones btn2" id="btnNuevo">Nuevo</button>
+            </div>
+        </div>
+
+<h1 class="contactos">Contactos</h1>
+        <label id="totalRegistros" class="contactos">Total registros = 0</label>
+        <div class="card-body">
+            <table class="table" id="miTabla">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Teléfono</th>
+                    <th>Fecha de nacimiento</th>
+                </tr>
+            </table>
+        </div>  
+    </div>
+</div>
+</body>
+</html>

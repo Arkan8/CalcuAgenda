@@ -1,0 +1,82 @@
+body, .card{
+    background-image: url(../images/fondoagenda.jpg);
+    background-attachment: fixed;
+    color: whitesmoke;
+    user-select: none;
+}
+
+.card-body{
+    background-image: url();
+}
+
+.table{
+    color: whitesmoke;
+}
+
+.item{
+    background-color: tomato;
+}
+
+.menuSuperior{
+    margin: 10px;
+    background-color:rgba(0, 0, 0, 0.2);
+    padding: 15px;
+}
+
+.buscar{
+    float: right;
+    margin: 2px;
+}
+
+.btn2{
+    margin-top: 14px;
+    margin-right: 10px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 3px 12px;
+    margin: 2px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+.form-group{
+    width: 50%;
+    margin: 25px;
+}
+
+.botones{
+    position: relative;
+    background-color: rgb(78, 139, 230);
+    box-shadow: 0px 4px rgb(173, 172, 252);
+
+    text-align: center;
+    color: white;
+}
+
+.registros{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.botones:hover{
+    background-color: turquoise;
+}
+
+.botones:active{
+    box-shadow: 0px 0px;
+    top: 4px;
+}
+
+.botones:disabled{
+    background-color: gray;
+}
+
+.contactos{
+    margin-left: 20px;
+}
+
+.error{
+    color: red;
+}

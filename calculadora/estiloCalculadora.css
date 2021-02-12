@@ -1,0 +1,207 @@
+html {
+    background-image: url(../images/fondo4.jpg);
+    background-size: 130%;
+    overflow: hidden;
+}
+
+#calcu {
+    /* Cuerpo de la calculadora */
+    width: 370px;
+    height: auto;
+    margin-top: 10%;
+    margin-left: 300px;
+    padding: 20px 12px 9px;
+    /* Color de fondo + sombreado para efecto 3D */
+    background: rgb(100, 100, 100);
+    border-radius: 3px;
+    box-shadow: 0px 8px rgb(75, 75, 75), 0px 10px 15px rgba(0, 0, 0, 0.2)
+}
+
+.superior span.borrar {
+    /* Botón C para borrar */
+    float: left;
+}
+
+.superior .pantalla {
+    /* Pantalla de la calculadora */
+    min-width: 100px;
+    min-height: 43px;
+    max-width: 271px;
+    max-height: 120px;
+    /*height: 43px;
+    width: 269px;*/
+    float: right;
+    /*padding: 2 24px;*/
+    /* Color de fondo + sombreado para efecto 3D */
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+    cursor: unset;
+    border: 0;
+    /* Tipografía de la pantalla */
+    font-size: 140%;
+    line-height: 30%;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    text-align: right;
+    letter-spacing: 1px;
+    padding-top: 6px;
+    padding-right: 6px;
+    text-overflow: ellipsis;
+}
+
+.container {
+    display: flex;
+}
+
+.teclas,
+.superior {
+    overflow: hidden;
+}
+
+
+/* Formato de las teclas numéricas, operadores y C */
+
+.teclas span,
+.superior span.borrar {
+    float: left;
+    position: relative;
+    top: 0;
+    cursor: pointer;
+    width: 23%;
+    height: 48px;
+    /*
+    width: 86px;
+    height: 48px;
+    */
+    /* Color de fondo de los botones + sombreado para efecto 3D */
+    background: white;
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    margin: 0 7px 11px 0;
+    /* Color del texto de los botones */
+    color: #888;
+    line-height: 36px;
+    text-align: center;
+    /* Impedir seleccionar el texto dentro de los "botones" */
+    user-select: none;
+    transition: all 0.2s ease;
+    /* Tipografia de los botones */
+    font-size: 25px;
+    line-height: 40px;
+    color: black;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+
+/* Cambiar por separado las caracteristicas de las teclas de operacion */
+
+.teclas span.operador {
+    background: rgb(243, 133, 142);
+    width: 92px;
+    margin-right: 0;
+    color: black;
+}
+
+
+/* Cambiar por separado la tecla = */
+
+.teclas span.igual {
+    background: #f1ff92;
+    color: black;
+}
+
+
+/* Cambiar por separado la tecla C */
+
+.superior span.borrar {
+    background: rgb(243, 133, 142);
+    color: black;
+}
+
+
+/* Efectos al pasar el ratón por encima para las teclas numericas y operadores */
+
+.teclas span:hover {
+    background: #9c89f6;
+    box-shadow: 0px 4px #6b54d3;
+    color: white;
+}
+
+
+/* Efectos al pasar el ratón por encima para = */
+
+.teclas span.igual:hover {
+    background: #abb850;
+    box-shadow: 0px 4px #717a33;
+    color: #ffffff;
+}
+
+
+/* Efectos al pasar el ratón por encima para C */
+
+.superior span.borrar:hover {
+    background: #abb850;
+    box-shadow: 0px 4px #717a33;
+    color: white;
+}
+
+
+/* Simular pulsar los botones al eliminar las sombras inferiores y mover el bloque */
+
+.teclas span:active {
+    box-shadow: 0px 0px #6b54d3;
+    top: 4px;
+}
+
+
+/* Cuando se clican los botones, tendrá efecto 3D al mover el botón sobre la sombra */
+
+.teclas span.igual:active {
+    box-shadow: 0px 0px #717a33;
+    top: 4px;
+}
+
+.superior span.borrar:active {
+    top: 4px;
+    box-shadow: 0px 0px #d3545d;
+}
+
+
+/* Estas son las teclas de operaciones especiales */
+
+.teclas span.especiales {
+    background: rgb(184, 175, 233);
+    color: black;
+}
+
+.teclas span.especiales2 {
+    background: rgb(184, 175, 233);
+    width: 92px;
+    margin-right: 0;
+    color: black;
+}
+
+.teclas span.especiales:hover {
+    background: #abb850;
+    box-shadow: 0px 4px #717a33;
+    color: white;
+}
+
+.teclas span.especiales2:hover {
+    background: #abb850;
+    box-shadow: 0px 4px #717a33;
+    color: white;
+}
+
+.teclas span.especiales:active {
+    box-shadow: 0px 0px #717a33;
+    top: 4px;
+}
+
+.teclas span.especiales2:active {
+    box-shadow: 0px 0px #717a33;
+    top: 4px;
+}
